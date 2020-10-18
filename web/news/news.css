@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    background: rgb(209, 224, 238);
+}
+
+header{
+    font-family: 'Bangers', cursive;
+    display: flex;
+    background-color: #9A28F8;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    justify-content: start;
+}
+
+h1{
+    margin-left: 12%;
+    font-size: 45px;
+    text-shadow: yellow 0 0 10px;
+    animation: spot 1.8s linear infinite alternate;
+    animation-play-state: running;
+}
+
+section{
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+    color: #E2D810;
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.line_box{
+    display: flex;
+    justify-content: center;
+}
+
+.border{
+    width: 30%;
+    height: 4px;
+    background: black;
+}
+
+.row{
+    margin-top: 2%;
+    background: rgba(0,0,0,0.1);
+    padding-bottom: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: #9A28F8 solid 2px;
+    border-radius: 10px;
+    
+}
+
+.col p{
+    overflow: auto;
+}
+
+section img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@keyframes spot{
+    0%{
+        text-shadow: white 0 0 0px;
+    }
+    100%{
+       text-shadow: yellow 0 0 20px;
+    }
+}
+
+.flexbox_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 768px){
+    section img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    section img{
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    section img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    section img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    footer div a{
+        color: #E2D810;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    footer div img{
+        width: 45px;
+        height: 45px;
+    }
+    h2{
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width: 230px){
+    section img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .row p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 40px;
+        margin-left: 5%;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 165px){
+    section img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+@media screen and (max-width: 150px){
+    section img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .row p{
+        font-size: 8px;
+        text-align: start;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .flexbox_menu img{
+        width: 30px;
+        height: 30px;
+    }
+    footer div a{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 120px){
+    section img{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    h2{
+        font-size: 1em;
+    }
+    footer div a{
+        font-size: 12px;
+    }
+}
+
+
+
+
+footer{
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    background-color: #9A28F8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_flexbox{
+    display: flex;
+    margin-left: 2%;
+    align-items: center;
+}
+
+.footer_blexbox_right{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+footer img{
+    width: 65px;
+    height: 65px;
+    margin-right: 8%;
+    margin-left: 1%;
+}
+
+.vk_search{
+    margin-right: 5%;
+}
+
+footer a{
+    color: #E2D810;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-shadow: red 0 0 10px;
+}
+
+@media screen and (max-width: 105px){
+    h1{
+        font-size: 15px;
+    }
+    footer div img{
+        width: 25px;
+        height: 25px;
+    }
+
+    footer div a{
+        font-size: 8px;
+    }
+}
